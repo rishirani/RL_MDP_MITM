@@ -1,0 +1,15 @@
+  adversary: 4000 runs to t=1.00e+06: 7s
+  adversary: 4000 runs to t=1.00e+06: 8s
+paired with Section VII adversary runs: True
+=== MB rates (slope of log quantile vs log t)
+  agent q_0.75(max||pbar-p||_1): slope -0.4983 CI [-0.5004,-0.4962]
+  adv   q_0.25(psi_V): slope -0.5019 CI [-0.5040,-0.4994]
+  BDD Pr = 0.5: contour slope 0.986; t_agt/t_adv in [11.4,12.9]
+  MB  Pr = 0.5: contour slope 1.012; t_agt/t_adv in [3.71,4.17]
+  BDD Pr = 0.8: contour slope 0.989; t_agt/t_adv in [31.6,35.2]
+  MB  Pr = 0.8: contour slope 1.014; t_agt/t_adv in [9.96,11.1]
+  BDD Pr = 0.9: contour slope 0.996; t_agt/t_adv in [55.9,60.2]
+  MB  Pr = 0.9: contour slope 1.014; t_agt/t_adv in [16.8,19.3]
+  delta=0.5: MB B_hat=3.339 A_hat=1.8266 C_hat_MB=13.36 | BDD C_hat=48.27 | ratio 3.61
+  delta=0.2: MB B_hat=4.117 A_hat=1.3452 C_hat_MB=37.47 | BDD C_hat=146.3 | ratio 3.9
+python3 model_based_comparison.py grid  128.37s user 0.79s system 764% cpu 16.902 total

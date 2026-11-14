@@ -1,0 +1,7 @@
+delta=0.5 rho=0.5: B_hat=3.086 A_hat=1.1550 C_hat=48.27; t_agt=[34319, 108603, 343402, 1086025]
+  agent: 400 runs to t=1.09e+06, gamma=0.3: 7s
+  adversary: 400 runs to t=1.00e+04: 2s
+  t_adv=316 t_agt=34319 t_det=343190: P(FA)=0.0000 P(miss)=0.0300 P(E)=0.637 | given E: FA=0.0000 miss=0.0000 | Thm 9 bounds FA<=0.0806 miss<=0.0201+r_V | min visit freq under attack 0.170 (m=0.125) (2s)
+  t_adv=1000 t_agt=108603 t_det=1086030: P(FA)=0.0000 P(miss)=0.0225 P(E)=0.650 | given E: FA=0.0000 miss=0.0000 | Thm 9 bounds FA<=0.0806 miss<=0.0201+r_V | min visit freq under attack 0.202 (m=0.125) (5s)
+  t_adv=3162 t_agt=343402 t_det=3434020: P(FA)=0.0025 P(miss)=0.0275 P(E)=0.685 | given E: FA=0.0000 miss=0.0000 | Thm 9 bounds FA<=0.0806 miss<=0.0201+r_V | min visit freq under attack 0.217 (m=0.125) (17s)
+  t_adv=10000 t_agt=1086025 t_det=10860250: P(FA)=0.0000 P(miss)=0.0325 P(E)=0.613 | given E: FA=0.0000 miss=0.0000 | Thm 9 bounds FA<=0.0806 miss<=0.0201+r_V | min visit freq under attack 0.225 (m=0.125) (57s)

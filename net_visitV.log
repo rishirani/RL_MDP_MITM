@@ -1,0 +1,10 @@
+m = 0.0156; |V| = 13 of 32; V is the greedy pairs of 13 states: True; smallest frequency in V 0.0159, largest outside V 0.0144
+  t_agt/t_adv=10: V unchanged under the agent's eps-greedy policy and the adversary's model in 0.175 of runs
+  t_agt/t_adv=100: V unchanged under the agent's eps-greedy policy and the adversary's model in 0.180 of runs
+  t_agt/t_adv=1000: V unchanged under the agent's eps-greedy policy and the adversary's model in 0.180 of runs
+  V unchanged under the adversary's model (policy from Q*) in 0.180 of runs
+robust V: |V| = 10; smallest frequency of a robust-V pair over all runs 0.0165 (m = 0.0156)
+Phi_V: slope -0.499 (t_adv >= 1e4); B_hat=4.923 A_hat=1.1338 C_hat_V=169.7 (Phi_min: C_hat=1.99e+07); certified t_agt at t_adv=10000: 3.82e+06
+  t_adv=10000 t_agt=1.00e+05: Pr[IA with Phi_V] = 0.087
+  t_adv=10000 t_agt=1.00e+06: Pr[IA with Phi_V] = 0.936
+  t_adv=10000 t_agt=1.00e+07: Pr[IA with Phi_V] = 1.000

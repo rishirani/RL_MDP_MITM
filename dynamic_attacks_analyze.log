@@ -1,0 +1,27 @@
+  agent: 200 runs to t=1.09e+05, gamma=0.3: 0s
+  adversary: 200 runs to t=1.00e+03: 0s
+pi = [0.5267, 0.4733], pi_hat = [0.5989, 0.4011]
+nu_c = 0.198, nu* = 0.345
+  nu=0.00 (realized 0.0000): max|mean BDPM - limit| = 5.85e-05  (max |z| = 0.9)
+  nu=0.05 (realized 0.0501): max|mean BDPM - limit| = 8.00e-05  (max |z| = 1.2)
+  nu=0.10 (realized 0.1001): max|mean BDPM - limit| = 1.22e-04  (max |z| = 2.0)
+  nu=0.15 (realized 0.1502): max|mean BDPM - limit| = 6.99e-05  (max |z| = 1.2)
+  nu=0.20 (realized 0.2003): max|mean BDPM - limit| = 7.90e-05  (max |z| = 1.4)
+  nu=0.25 (realized 0.2503): max|mean BDPM - limit| = 7.75e-05  (max |z| = 1.2)
+  nu=0.30 (realized 0.3004): max|mean BDPM - limit| = 1.35e-04  (max |z| = 2.1)
+  nu=0.35 (realized 0.3504): max|mean BDPM - limit| = 2.52e-05  (max |z| = 0.4)
+  nu=0.40 (realized 0.4005): max|mean BDPM - limit| = 7.64e-05  (max |z| = 1.2)
+  nu=0.45 (realized 0.4506): max|mean BDPM - limit| = 1.50e-04  (max |z| = 3.9)
+  nu=0.50 (realized 0.5006): max|mean BDPM - limit| = 1.20e-04  (max |z| = 1.8)
+  nu=0.55 (realized 0.5507): max|mean BDPM - limit| = 1.06e-04  (max |z| = 1.7)
+  nu=0.60 (realized 0.6008): max|mean BDPM - limit| = 8.23e-05  (max |z| = 1.5)
+  nu=0.65 (realized 0.6508): max|mean BDPM - limit| = 5.65e-05  (max |z| = 0.8)
+  nu=0.70 (realized 0.7009): max|mean BDPM - limit| = 1.14e-04  (max |z| = 2.2)
+  nu=0.75 (realized 0.7508): max|mean BDPM - limit| = 1.16e-04  (max |z| = 2.1)
+  nu=0.80 (realized 0.8006): max|mean BDPM - limit| = 3.66e-05  (max |z| = 0.5)
+  nu=0.85 (realized 0.8505): max|mean BDPM - limit| = 8.19e-05  (max |z| = 1.2)
+  nu=0.90 (realized 0.9003): max|mean BDPM - limit| = 1.18e-04  (max |z| = 1.5)
+  nu=0.95 (realized 0.9502): max|mean BDPM - limit| = 9.54e-05  (max |z| = 1.5)
+  nu=1.00 (realized 1.0000): max|mean BDPM - limit| = 8.14e-05  (max |z| = 1.0)
+84 z-scores: mean z^2 = 0.993, chi2 p = 0.50, KS p = 0.12, max|z| = 3.90 (Bonferroni p = 0.008)
+with the time fraction nu for every pair instead: mean z^2 = 869.130, max|z| = 68.79

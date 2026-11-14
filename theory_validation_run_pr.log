@@ -1,0 +1,32 @@
+  agent: 1000 runs to t=1.00e+07, gamma=0.3: 36s
+  adversary: 4000 runs to t=1.00e+06: 5s
+  adversary: 4000 runs to t=1.00e+06: 5s
+  agent: 1000 runs to t=1.00e+09, gamma=0.3: 20084s
+saved theory_validation_exp12.npz
+=== Exp. 1: certificate rates (eval runs; slope of log-quantile vs log t, 95% bootstrap CI)
+  agent  q_0.75(||Q-Q*||), t in [1e3,1e9]: slope -0.5061  CI [-0.5083,-0.5040]
+  adv    q_0.25(Phi_min),   t in [1e2,1e6]: slope -0.5052  CI [-0.5093,-0.5002]
+  agent  q_0.90(||Q-Q*||), t in [1e3,1e9]: slope -0.5069  CI [-0.5093,-0.5044]
+  adv    q_0.10(Phi_min),   t in [1e2,1e6]: slope -0.4988  CI [-0.5043,-0.4928]
+=== Exp. 2: information advantage event
+  Pr[IA_real] = 0.5: contour slope 1.007 over t_adv in [100,100000] (25 pts); t_agt/t_adv in [579,662]
+  Pr[IA_real] = 0.8: contour slope 1.007 over t_adv in [100,100000] (25 pts); t_agt/t_adv in [4.97e+03,6.73e+03]
+  Pr[IA_real] = 0.9: contour slope 0.989 over t_adv in [100,42170] (22 pts); t_agt/t_adv in [2.05e+04,3.03e+04]
+  delta=0.5: B_hat=3.086, A_hat=0.0886, certified slope C_hat=8210
+     min Pr[E] over 325 cells with t_agt >= C_hat t_adv: 0.6142  (required >= 0.5)
+     Pr[Phi_min > 2(1+g) eps_hat(T*)] along the certified line: min 0.7500 max 0.7860 (25 t_adv values; required >= 0.75)
+  delta=0.2: B_hat=3.946, A_hat=0.0296, certified slope C_hat=1.201e+05
+     min Pr[E] over 136 cells with t_agt >= C_hat t_adv: 0.8592  (required >= 0.8)
+     Pr[Phi_min > 2(1+g) eps_hat(T*)] along the certified line: min 0.9083 max 0.9313 (16 t_adv values; required >= 0.9)
+delta=0.5 rho=0.5: B_hat=3.086 A_hat=0.0886 C_hat=8210; t_agt=[1847206, 5837169, 18472053, 58408629]
+  agent: 400 runs to t=5.84e+07, gamma=0.3: 152s
+  adversary: 400 runs to t=3.16e+03: 0s
+  t_adv=100 t_agt=1847206 t_det=7388824: P(FA)=0.0000 P(miss)=0.0000 P(E)=0.662 | given E: FA=0.0000 miss=0.0000 | Thm 9 bounds FA<=2.17 miss<=2.17 (37s)
+  t_adv=316 t_agt=5837169 t_det=23348676: P(FA)=0.0025 P(miss)=0.0000 P(E)=0.620 | given E: FA=0.0000 miss=0.0000 | Thm 9 bounds FA<=2.17 miss<=2.17 (114s)
+  t_adv=1000 t_agt=18472053 t_det=73888212: P(FA)=0.0000 P(miss)=0.0000 P(E)=0.688 | given E: FA=0.0000 miss=0.0000 | Thm 9 bounds FA<=2.17 miss<=2.17 (361s)
+  t_adv=3162 t_agt=58408629 t_det=233634516: P(FA)=0.0000 P(miss)=0.0000 P(E)=0.672 | given E: FA=0.0000 miss=0.0000 | Thm 9 bounds FA<=2.17 miss<=2.17 (1142s)
+  agent: 200 runs to t=1.85e+07, gamma=0.3: 25s
+  adversary: 200 runs to t=1.00e+03: 0s
+single: t_adv=1000 t_agt=18472053 t_det=73888212; agent run 0 (err=4.06e-04 <= eps_c=7.18e-04), adversary run 1 (Phi_min=3.39e-03 > 2(1+g)eps_bar=2.80e-03); threshold=1.40e-03; final: secure max 7.78e-04, attacked min 3.55e-02 (51s)
+saved theory_ia_map.png, theory_single_instance.png
+PIPELINE_DONE

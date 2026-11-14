@@ -1,0 +1,7 @@
+delta=0.5 rho=0.5: C_hat_MB=13.36 -> t_agt=[9503, 30071, 95083, 300703] (BDD C_hat=48.27)
+  adversary: 400 runs to t=1.00e+04: 0s
+  agent: 400 runs to t=3.01e+05, gamma=0.3: 1s
+  t_adv=316 t_agt=9503 t_det=95030: MB FA=0.0150 miss=0.0200 | BDD (same t_agt) FA=0.0000 miss=0.1850 (2s)
+  t_adv=1000 t_agt=30071 t_det=300710: MB FA=0.0450 miss=0.0125 | BDD (same t_agt) FA=0.0000 miss=0.1825 (2s)
+  t_adv=3162 t_agt=95083 t_det=950830: MB FA=0.0225 miss=0.0225 | BDD (same t_agt) FA=0.0000 miss=0.1850 (7s)
+  t_adv=10000 t_agt=300703 t_det=3007030: MB FA=0.0375 miss=0.0375 | BDD (same t_agt) FA=0.0000 miss=0.2125 (21s)

@@ -1,0 +1,6 @@
+  agent: 1000 runs to t=1.00e+07, gamma=0.3: 34s
+  adversary: 4000 runs to t=1.00e+06: 6s
+  adversary: 4000 runs to t=1.00e+06: 8s
+  agent: 1000 runs to t=1.00e+08, gamma=0.8: 384s
+  agent: 1000 runs to t=1.00e+09, gamma=0.3: 6614s
+saved theory_validation_exp12.npz

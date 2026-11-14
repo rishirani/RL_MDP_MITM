@@ -1,0 +1,15 @@
+=== Exp. 1: certificate rates (eval runs; slope of log-quantile vs log t, 95% bootstrap CI)
+  agent  q_0.75(||Q-Q*||), t in [1e3,1e9]: slope -0.5061  CI [-0.5083,-0.5040]
+  adv    q_0.25(Phi_V),     t in [316,1e6]: slope -0.5023  CI [-0.5046,-0.4998]
+  agent  q_0.90(||Q-Q*||), t in [1e3,1e9]: slope -0.5069  CI [-0.5093,-0.5044]
+  adv    q_0.10(Phi_V),     t in [316,1e6]: slope -0.5043  CI [-0.5073,-0.5013]
+=== Exp. 2: information advantage event
+  Pr[IA_real] = 0.5: contour slope 0.986 over t_adv in [316,100000] (21 pts); t_agt/t_adv in [11.4,12.9]
+  Pr[IA_real] = 0.8: contour slope 0.989 over t_adv in [316,100000] (21 pts); t_agt/t_adv in [31.6,35.2]
+  Pr[IA_real] = 0.9: contour slope 0.996 over t_adv in [316,100000] (21 pts); t_agt/t_adv in [55.9,60.2]
+  delta=0.5: B_hat=3.086, A_hat=1.1550, certified slope C_hat=48.27
+     min Pr[E] over 725 cells with t_agt >= C_hat t_adv: 0.6090  (required >= 0.5)
+     Pr[Phi_V > 2(1+g) eps_hat(T*)] along the certified line: min 0.7458 max 0.7745 (29 t_adv values; required >= 0.75)
+  delta=0.2: B_hat=3.946, A_hat=0.8482, certified slope C_hat=146.3
+     min Pr[E] over 609 cells with t_agt >= C_hat t_adv: 0.8464  (required >= 0.8)
+     Pr[Phi_V > 2(1+g) eps_hat(T*)] along the certified line: min 0.8945 max 0.9130 (29 t_adv values; required >= 0.9)
